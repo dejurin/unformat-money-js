@@ -1,0 +1,66 @@
+{
+	"name": "unformat-money-js",
+	"description": "",
+	"version": "1.0.0",
+	"license": "BSD-2-Clause",
+	"main": "./dist/unformat-money.js",
+	"author": "@dejurin",
+	"bugs": {
+		"url": "https://github.com/dejurin/unformat-money-js/issues"
+	},
+	"scripts": {
+		"build": "npm run clean && tsc && gulp",
+		"clean": "gulp clean",
+		"lint": "tslint --project tsconfig.json"
+	},
+	"keywords": [
+		"money",
+		"format",
+		"currency",
+		"format-currency",
+		"currency-formatter",
+		"utilities",
+		"accounting",
+		"number",
+		"parse",
+		"precision",
+		"decimal",
+		"finance",
+		"exchange"
+	],
+	"devDependencies": {
+		"@babel/core": "^7.8.3",
+		"@babel/parser": "^7.8.3",
+		"@babel/preset-env": "^7.8.3",
+		"@babel/preset-react": "^7.8.3",
+		"@babel/types": "^7.8.3",
+		"@types/jest": "^24.0.6",
+		"babel-core": "^6.26.3",
+		"babel-loader": "^7.1.5",
+		"babel-preset-env": "^1.7.0",
+		"browserify": "^16.2.3",
+		"del": "^3.0.0",
+		"eslint": "^7.2.0",
+		"eslint-config-airbnb": "^18.2.0",
+		"eslint-plugin-import": "^2.22.1",
+		"eslint-plugin-jsx-a11y": "^6.4.1",
+		"eslint-plugin-react": "^7.21.5",
+		"eslint-plugin-react-hooks": "^4.0.0",
+		"gulp": "^4.0.2",
+		"gulp-concat": "^2.6.1",
+		"gulp-uglify": "^3.0.2",
+		"jest-diff": "^25.1.0",
+		"typescript": "^3.8.0-dev.20200125",
+		"uglify-es": "^3.3.9",
+		"webpack": "^4.41.5",
+		"webpack-cli": "^3.3.10"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:dejurin/unformat-money-js.git"
+	},
+	"types": "./dist/unformat-money.d.ts",
+	"dependencies": {
+		"@typescript-eslint/eslint-plugin": "^4.6.0"
+	}
+}
