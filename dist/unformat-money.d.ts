@@ -11,5 +11,5 @@ export declare class UnFormatMoney {
     version: string;
     private defaults;
     constructor(options?: UnFormatMoneyOptions);
-    from: (value: (string | number), options: UnFormatMoneyOptions) => number;
+    un: (value: (string | number), options: UnFormatMoneyOptions) => number;
 }

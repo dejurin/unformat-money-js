@@ -13,18 +13,17 @@ class UnFormatMoney {
         this.defaults = {
             decimalPoint: '.',
         };
-        this.from = (value, options) => {
-            options = Object.assign(Object.assign({}, this.options), options);
-            value = value || 0;
-            if (typeof value === "number")
-                return value;
+        this.un = (value, options) => {
+            const opt = Object.assign(Object.assign({}, this.options), options);
+            const val = value || 0;
+            if (typeof val === 'number')
+                return val;
             // Build regex to strip out everything except digits, decimal point and minus sign:
-            const regex = new RegExp("[^0-9-" + options.decimalPoint + "]", "g");
-            const unformatted = parseFloat(("" + value)
-                .replace(/\((?=\d+)(.*)\)/, "-$1") // replace bracketed values with negatives
+            const regex = new RegExp(`[^0-9-${opt.decimalPoint}]`, 'g');
+            const unformatted = parseFloat((val)
+                .replace(/\((?=\d+)(.*)\)/, '-$1') // replace bracketed values with negatives
                 .replace(regex, '') // strip out any cruft
-                .replace(options.decimalPoint, '.') // make sure decimal point is standard
-            );
+                .replace(opt.decimalPoint, '.'));
             return !isNaN(unformatted) ? unformatted : 0;
         };
         this.options = Object.assign(Object.assign({}, this.defaults), options);

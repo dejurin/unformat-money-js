@@ -28,9 +28,9 @@ const array2 = [
 ];
 
 array1.forEach(element => {
-  console.log(un1.from(element));
+  console.log(un1.un(element));
 });
 
 array2.forEach(element => {
-  console.log(un2.from(element));
+  console.log(un2.un(element));
 });

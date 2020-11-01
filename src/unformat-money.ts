@@ -10,37 +10,37 @@ export interface UnFormatMoneyOptions {
 
 export class UnFormatMoney {
 
-  version = '1.0.0';
+  version = '1.0.1';
   private defaults: UnFormatMoneyOptions = {
     decimalPoint: '.', // default
   };
 
   constructor(
-    private options?: UnFormatMoneyOptions
+    private options?: UnFormatMoneyOptions,
   ) {
     this.options = {
       ...this.defaults,
-      ...options
+      ...options,
     };
   }
 
-  from = (value: (string | number), options: UnFormatMoneyOptions): number => {
-    options = {
+  un = (value: (string | number), options: UnFormatMoneyOptions): number => {
+    const opt = {
       ...this.options,
-      ...options
+      ...options,
     };
 
-    value = value || 0;
+    const val: (string | number) = value || 0;
 
-    if (typeof value === "number") return value;
+    if (typeof val === 'number') return val;
 
     // Build regex to strip out everything except digits, decimal point and minus sign:
-    const regex: RegExp = new RegExp("[^0-9-" + options.decimalPoint + "]", "g");
+    const regex: RegExp = new RegExp(`[^0-9-${opt.decimalPoint}]`, 'g');
     const unformatted = parseFloat(
-      ("" + value)
-        .replace(/\((?=\d+)(.*)\)/, "-$1")    // replace bracketed values with negatives
+      (val)
+        .replace(/\((?=\d+)(.*)\)/, '-$1')    // replace bracketed values with negatives
         .replace(regex, '')                   // strip out any cruft
-        .replace(options.decimalPoint, '.')   // make sure decimal point is standard
+        .replace(opt.decimalPoint, '.'),      // make sure decimal point is standard
     );
 
     return !isNaN(unformatted) ? unformatted : 0;
