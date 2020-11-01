@@ -1,7 +1,7 @@
 {
 	"name": "unformat-money-js",
 	"description": "Zero dependency tiny JavaScript library (576 bytes) by CurrencyRate.today, providing simple way removes all formatting/cruft and returns the raw float value.",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"license": "BSD-2-Clause",
 	"main": "./dist/unformat-money.js",
 	"author": "@dejurin",

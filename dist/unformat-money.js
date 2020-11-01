@@ -1,6 +1,6 @@
 "use strict";
 /*!
- * unformat-money-js v1.0.0
+ * unformat-money-js v1.0.4
  * (c) 2020 Yurii Derevych
  * Released under the BSD-2-Clause License.
  */
@@ -9,7 +9,7 @@ exports.UnFormatMoney = void 0;
 class UnFormatMoney {
     constructor(options) {
         this.options = options;
-        this.version = '1.0.3';
+        this.version = '1.0.4';
         this.defaults = {
             decimalPoint: '.',
         };
