@@ -1,7 +1,7 @@
 {
 	"name": "unformat-money-js",
 	"description": "",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"license": "BSD-2-Clause",
 	"main": "./dist/unformat-money.js",
 	"author": "@dejurin",

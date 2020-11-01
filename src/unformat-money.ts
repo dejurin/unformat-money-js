@@ -10,7 +10,7 @@ export interface UnFormatMoneyOptions {
 
 export class UnFormatMoney {
 
-  version = '1.0.1';
+  version = '1.0.2';
   private defaults: UnFormatMoneyOptions = {
     decimalPoint: '.', // default
   };
