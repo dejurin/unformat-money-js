@@ -9,7 +9,7 @@ exports.UnFormatMoney = void 0;
 class UnFormatMoney {
     constructor(options) {
         this.options = options;
-        this.version = '1.0.2';
+        this.version = '1.0.3';
         this.defaults = {
             decimalPoint: '.',
         };
