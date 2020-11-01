@@ -8,8 +8,8 @@ const uglify = composer(uglifyES, console);
 const clean = () => del(['dist/*']);
 
 const dest = () => {
-  return gulp.src('./dist/format-money.js', { allowEmpty: true })
-    .pipe(concat('format-money.min.js'))
+  return gulp.src('./dist/unformat-money.js', { allowEmpty: true })
+    .pipe(concat('unformat-money.min.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('dist', { sourcemaps: true }));
 }
