@@ -9,7 +9,7 @@
 ## Install
 
 ```bash
-npm install unformat-money-js
+npm i unformat-money-js
 ```
 
 ## Usage
@@ -28,6 +28,8 @@ You can added options in construct of class and in method. But method will be pr
 ### Example:
 
 ```sh
+import { UnFormatMoney } from 'unformat-money-js';
+
 const unformat = new UnFormatMoney({ decimalPoint: ',' });
 
 console.log(unformat.un('€12.345,67', { decimalPoint: ',' })); // 12345.67
