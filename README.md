@@ -4,7 +4,7 @@
 ![download per month](https://img.shields.io/npm/dm/unformat-money-js)
 
 
-**Zero dependency** tiny JavaScript library (576 bytes) by CurrencyRate.today, providing simple way removes all formatting/cruft and returns the raw float value.
+**Zero dependency** tiny JavaScript library (532 bytes) by CurrencyRate.today, providing simple way removes all formatting/cruft and returns the raw float value.
 
 
 ## Require

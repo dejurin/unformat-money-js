@@ -5,8 +5,8 @@ export default {
   input: 'src/unformat-money.ts',
   plugins: [
     typescript({
-      tsconfig: './tsconfig.rollup.json'
-    })
+      tsconfig: './tsconfig.rollup.json',
+    }),
   ],
   output: [
     // UMD
@@ -22,6 +22,19 @@ export default {
       name: 'UnformatMoneyJS',
       sourcemap: true,
       plugins: [terser()],
+    },
+    {
+      file: 'dist/unformat-money-js.umd.clean.min.js',
+      format: 'umd',
+      name: 'UnformatMoneyJS',
+      sourcemap: false,
+      plugins: [
+        terser({
+          format: {
+            comments: false,
+          },
+        }),
+      ],
     },
     // ESM
     {
@@ -46,6 +59,6 @@ export default {
       format: 'cjs',
       sourcemap: true,
       plugins: [terser()],
-    }
+    },
   ],
 };
