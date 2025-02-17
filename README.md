@@ -6,17 +6,18 @@
 
 **Zero dependency** tiny JavaScript library (532 bytes) by CurrencyRate.today, providing simple way removes all formatting/cruft and returns the raw float value.
 
-## Require
+## Install
 
-```sh
-const { UnFormatMoney } = require('unformat-money-js');
+```bash
+npm install unformat-money-js
 ```
 
-## Example
+## Usage
 
-```sh
-const unformat = new UnFormatMoney({ decimalPoint: ',' });
+```typescript
+import { UnFormatMoney } from 'unformat-money-js';
 
+const unformat = new UnFormatMoney({ decimalPoint: '.' });
 console.log(unformat.un('$12,345.67')); // 12345.67
 ```
 
