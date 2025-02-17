@@ -31,9 +31,10 @@ const un = new UnFormatMoney({ decimalPoint: ',' });
 console.log(un.from('€12.345,67', { decimalPoint: ',' })); // 12345.67
 ```
 
-| Name          | Default  | Type    |
-|---------------|----------|---------|
-| decimalPoint  | .        | String  |
+| Name          | Default  | Type    | Description |
+|---------------|----------|---------|-------------|
+| decimalPoint  | .        | String  | Decimal point |
+| accounting    | false    | Boolean | If true, remove parentheses and add negative sign |
 
 ## Source
 

@@ -1,4 +1,10 @@
 {
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true
+  },
     "[typescript]": {
       "editor.formatOnSave": false
     },

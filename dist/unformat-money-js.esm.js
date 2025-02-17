@@ -1,11 +1,8 @@
-"use strict";
 /*!
  * unformat-money-js v1.0.5
  * (c) 2025 Yurii Derevych
  * Released under the BSD-2-Clause License.
  */
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.UnFormatMoney = void 0;
 class UnFormatMoney {
     constructor(options) {
         this.options = options;
@@ -43,5 +40,6 @@ class UnFormatMoney {
         this.options = Object.assign(Object.assign({}, this.defaults), options);
     }
 }
-exports.UnFormatMoney = UnFormatMoney;
-//# sourceMappingURL=unformat-money.js.map
+
+export { UnFormatMoney };
+//# sourceMappingURL=unformat-money-js.esm.js.map

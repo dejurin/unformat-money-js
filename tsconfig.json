@@ -1,5 +1,8 @@
 {
   "compilerOptions": {
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
     "lib": ["ES6"],
     "module": "commonJS",
     "declaration": true,
@@ -8,12 +11,11 @@
     "pretty": true,
     "allowJs": true,
     "sourceMap": true,
-    "moduleResolution": "node",
+    "moduleResolution": "node"
   },
   "compileOnSave": true,
-  "include": ["src"],
-  "exclude": [
+  "include": ["src/unformat-money.ts"],
+"exclude": [
     "node_modules",
-    "**/*.spec.ts"
   ]
 }
