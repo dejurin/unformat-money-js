@@ -11,7 +11,8 @@
     ".": {
       "require": "./dist/unformat-money-js.cjs.js",
       "import": "./dist/unformat-money-js.esm.js",
-      "browser": "./dist/unformat-money-js.umd.min.js"
+      "browser": "./dist/unformat-money-js.umd.min.js",
+      "types": "./dist/unformat-money.d.ts"
     }
   },
   "files": [
