@@ -1,5 +1,5 @@
 /*!
- * unformat-money-js v1.0.6
+ * unformat-money-js v1.0.7
  * (c) 2025 Yurii Derevych
  * Released under the BSD-2-Clause License.
  */
@@ -10,7 +10,7 @@ export interface UnFormatMoneyOptions {
 }
 
 export class UnFormatMoney {
-  version = '1.0.6'; // Updated version to match header
+  version = '1.0.7'; // Updated version to match header
   private defaults: UnFormatMoneyOptions = {
     decimalPoint: '.', // default
     accounting: false, // normal mode by default

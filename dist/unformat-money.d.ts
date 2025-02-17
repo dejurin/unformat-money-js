@@ -1,5 +1,5 @@
 /*!
- * unformat-money-js v1.0.6
+ * unformat-money-js v1.0.7
  * (c) 2025 Yurii Derevych
  * Released under the BSD-2-Clause License.
  */
