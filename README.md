@@ -27,7 +27,7 @@ You can added options in construct of class and in method. But method will be pr
 
 ### Example:
 
-```sh
+```typescript
 import { UnFormatMoney } from 'unformat-money-js';
 
 const unformat = new UnFormatMoney({ decimalPoint: ',' });
