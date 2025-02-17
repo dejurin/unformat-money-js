@@ -1,14 +1,14 @@
 'use strict';
 
 /*!
- * unformat-money-js v1.0.5
+ * unformat-money-js v1.0.6
  * (c) 2025 Yurii Derevych
  * Released under the BSD-2-Clause License.
  */
 class UnFormatMoney {
     constructor(options) {
         this.options = options;
-        this.version = '1.0.5'; // Updated version to match header
+        this.version = '1.0.6'; // Updated version to match header
         this.defaults = {
             decimalPoint: '.', // default
             accounting: false, // normal mode by default
